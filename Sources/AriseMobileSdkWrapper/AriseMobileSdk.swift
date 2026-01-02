@@ -1,7 +1,6 @@
 // AriseMobileSdkWrapper
 // This wrapper provides access to the binary frameworks
-// AriseMobileSdk.framework has dependencies (OpenAPIRuntime, OpenAPIURLSession) statically linked
-// CloudCommerce.framework requires external dependencies (CryptoSwift, SwiftASN1, X509)
+// Both frameworks require external dependencies that must be provided
 
 import Foundation
 
@@ -13,12 +12,16 @@ import Foundation
 // Import CloudCommerce using module name (target name matches module name)
 @_exported import CloudCommerce
 
+// Import dependencies required by AriseMobileSdk
+@_exported import OpenAPIRuntime
+@_exported import OpenAPIURLSession
+@_exported import HTTPTypes
+
 // Import dependencies required by CloudCommerce
 @_exported import CryptoSwift
 @_exported import SwiftASN1
 @_exported import X509
 
-// Note: AriseMobileSdk.framework already includes OpenAPIRuntime and OpenAPIURLSession
-// statically, so we don't import them here to avoid duplicate class definitions.
-// CloudCommerce requires CryptoSwift, SwiftASN1, and X509 as external dependencies.
+// Note: Both AriseMobileSdk and CloudCommerce require external dependencies.
+// These dependencies are linked dynamically at runtime to avoid duplicate class definitions.
 

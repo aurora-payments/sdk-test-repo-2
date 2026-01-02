@@ -15,7 +15,11 @@ let package = Package(
         ),
     ],
     dependencies: [
-        // CloudCommerce.framework requires these dependencies to be available
+        // AriseMobileSdk.framework requires these dependencies
+        .package(url: "https://github.com/apple/swift-openapi-runtime.git", from: "1.0.0"),
+        .package(url: "https://github.com/apple/swift-openapi-urlsession.git", from: "1.0.0"),
+        .package(url: "https://github.com/apple/swift-http-types.git", from: "1.0.0"),
+        // CloudCommerce.framework requires these dependencies
         .package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", from: "1.8.0"),
         .package(url: "https://github.com/apple/swift-asn1.git", from: "1.2.0"),
         .package(url: "https://github.com/apple/swift-certificates.git", from: "1.0.0"),
@@ -36,6 +40,10 @@ let package = Package(
             dependencies: [
                 "AriseMobileSdk",  // Binary target with module name "AriseMobileSdk"
                 "CloudCommerce",   // Binary target with module name "CloudCommerce"
+                // AriseMobileSdk requires these dependencies
+                .product(name: "OpenAPIRuntime", package: "swift-openapi-runtime"),
+                .product(name: "OpenAPIURLSession", package: "swift-openapi-urlsession"),
+                .product(name: "HTTPTypes", package: "swift-http-types"),
                 // CloudCommerce requires these dependencies
                 .product(name: "CryptoSwift", package: "CryptoSwift"),
                 .product(name: "SwiftASN1", package: "swift-asn1"),
