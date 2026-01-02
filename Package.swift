@@ -14,7 +14,12 @@ let package = Package(
             targets: ["AriseMobileSdk"]
         ),
     ],
-    dependencies: [],
+    dependencies: [
+        // CloudCommerce.framework requires these dependencies to be available
+        .package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", from: "1.8.0"),
+        .package(url: "https://github.com/apple/swift-asn1.git", from: "1.2.0"),
+        .package(url: "https://github.com/apple/swift-certificates.git", from: "1.0.0"),
+    ],
     targets: [
         .binaryTarget(
             name: "AriseMobileSdkBinary",
@@ -29,6 +34,10 @@ let package = Package(
             dependencies: [
                 "AriseMobileSdkBinary",
                 "CloudCommerceBinary",
+                // CloudCommerce requires these dependencies
+                .product(name: "CryptoSwift", package: "CryptoSwift"),
+                .product(name: "SwiftASN1", package: "swift-asn1"),
+                .product(name: "X509", package: "swift-certificates"),
             ],
             path: "Sources/AriseMobileSdkWrapper"
         ),

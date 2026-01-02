@@ -1,22 +1,26 @@
 // AriseMobileSdk
 // This wrapper provides access to the binary frameworks
-// All dependencies (OpenAPIRuntime, OpenAPIURLSession, CryptoSwift, SwiftASN1, X509)
-// are already statically linked into the binary framework, so we don't need to
-// re-export them to avoid duplicate class definitions.
+// AriseMobileSdk.framework has dependencies (OpenAPIRuntime, OpenAPIURLSession) statically linked
+// CloudCommerce.framework requires external dependencies (CryptoSwift, SwiftASN1, X509)
 
 import Foundation
 
 // Re-export the binary framework module
-// The module name from the XCFramework is AriseMobileSdk (from the framework name)
-// but we reference it via the target name AriseMobileSdkBinary in Package.swift
-// We need to import using the actual module name from the framework
-// Check: If this doesn't work, the framework might export the module with a different name
-@_exported import AriseMobileSdkBinary
+// The actual module name in AriseMobileSdk.xcframework is "AriseMobileSdk"
+// We import it via the target dependency to make all public symbols available
+// Note: The module name comes from the framework itself, not the target name
+@_exported import AriseMobileSdk
 
 // Import CloudCommerce binary framework
-@_exported import CloudCommerceBinary
+@_exported import CloudCommerce
 
-// Note: Dependencies (OpenAPIRuntime, OpenAPIURLSession, CryptoSwift, SwiftASN1, X509)
-// are already embedded in the binary framework, so they should NOT be imported
-// here to avoid duplicate class definitions at runtime.
+// Import dependencies required by CloudCommerce
+// These are not embedded in CloudCommerce.framework and must be provided externally
+@_exported import CryptoSwift
+@_exported import SwiftASN1
+@_exported import X509
+
+// Note: AriseMobileSdk.framework already includes OpenAPIRuntime and OpenAPIURLSession
+// statically, so we don't import them here to avoid duplicate class definitions.
+// CloudCommerce requires CryptoSwift, SwiftASN1, and X509 as external dependencies.
 
