@@ -11,7 +11,7 @@ let package = Package(
     products: [
         .library(
             name: "AriseMobileSdk",
-            targets: ["AriseMobileSdk"]
+            targets: ["AriseMobileSdkWrapper"]
         ),
     ],
     dependencies: [
@@ -21,19 +21,21 @@ let package = Package(
         .package(url: "https://github.com/apple/swift-certificates.git", from: "1.0.0"),
     ],
     targets: [
+        // Binary target name MUST match the module name inside the framework
+        // The framework's module is "AriseMobileSdk" (from module.modulemap)
         .binaryTarget(
-            name: "AriseMobileSdkBinary",
+            name: "AriseMobileSdk",
             path: "./libs/AriseMobileSdk.xcframework"
         ),
         .binaryTarget(
-            name: "CloudCommerceBinary",
+            name: "CloudCommerce",
             path: "./libs/CloudCommerce.xcframework"
         ),
         .target(
-            name: "AriseMobileSdk",
+            name: "AriseMobileSdkWrapper",
             dependencies: [
-                "AriseMobileSdkBinary",
-                "CloudCommerceBinary",
+                "AriseMobileSdk",  // Binary target with module name "AriseMobileSdk"
+                "CloudCommerce",   // Binary target with module name "CloudCommerce"
                 // CloudCommerce requires these dependencies
                 .product(name: "CryptoSwift", package: "CryptoSwift"),
                 .product(name: "SwiftASN1", package: "swift-asn1"),

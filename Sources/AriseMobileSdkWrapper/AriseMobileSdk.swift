@@ -1,21 +1,19 @@
-// AriseMobileSdk
+// AriseMobileSdkWrapper
 // This wrapper provides access to the binary frameworks
 // AriseMobileSdk.framework has dependencies (OpenAPIRuntime, OpenAPIURLSession) statically linked
 // CloudCommerce.framework requires external dependencies (CryptoSwift, SwiftASN1, X509)
 
 import Foundation
 
-// Re-export the binary framework module
-// The actual module name in AriseMobileSdk.xcframework is "AriseMobileSdk"
-// We import it via the target dependency to make all public symbols available
-// Note: The module name comes from the framework itself, not the target name
+// In SPM, binary target name MUST match the module name inside the framework
+// The binary target is named "AriseMobileSdk" to match the module name from the framework
+// We import using the target name, which matches the module name
 @_exported import AriseMobileSdk
 
-// Import CloudCommerce binary framework
+// Import CloudCommerce using module name (target name matches module name)
 @_exported import CloudCommerce
 
 // Import dependencies required by CloudCommerce
-// These are not embedded in CloudCommerce.framework and must be provided externally
 @_exported import CryptoSwift
 @_exported import SwiftASN1
 @_exported import X509
