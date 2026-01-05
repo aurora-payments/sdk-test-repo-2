@@ -31,7 +31,7 @@ let package = Package(
         // This avoids naming conflict with the AriseMobileSdk class inside the module
         .binaryTarget(
             name: "AriseMobile",
-            path: "./libs/AriseMobileSdk.xcframework"
+            path: "./libs/AriseMobile.xcframework"
         ),
         .binaryTarget(
             name: "CloudCommerce",
