@@ -11,7 +11,7 @@ let package = Package(
     products: [
         .library(
             name: "AriseMobileSdkIos",
-            targets: ["AriseMobileSdkWrapper"]
+            targets: ["AriseMobileWrapper"]
         ),
     ],
     dependencies: [
@@ -26,22 +26,22 @@ let package = Package(
     ],
     targets: [
         // Binary target name MUST match the module name inside the framework
-        // The framework's module is "AriseMobileSdk" (from PRODUCT_MODULE_NAME)
-        // Framework file is named "AriseMobile.xcframework" but module inside is "AriseMobileSdk"
+        // The framework's module is "AriseMobile" (from PRODUCT_MODULE_NAME)
+        // Framework file is named "AriseMobileSdk.xcframework" but module inside is "AriseMobile"
         .binaryTarget(
-            name: "AriseMobileSdkIos",
-            path: "./libs/AriseMobile.xcframework"
+            name: "AriseMobile",
+            path: "./libs/AriseMobileSdk.xcframework"
         ),
         .binaryTarget(
             name: "CloudCommerce",
             path: "./libs/CloudCommerce.xcframework"
         ),
         .target(
-            name: "AriseMobileSdkWrapper",
+            name: "AriseMobileWrapper",
             dependencies: [
-                "AriseMobileSdk",  // Binary target with module name "AriseMobileSdk"
+                "AriseMobile",     // Binary target with module name "AriseMobile"
                 "CloudCommerce",   // Binary target with module name "CloudCommerce"
-                // AriseMobileSdk requires these dependencies
+                // AriseMobile requires these dependencies
                 .product(name: "OpenAPIRuntime", package: "swift-openapi-runtime"),
                 .product(name: "OpenAPIURLSession", package: "swift-openapi-urlsession"),
                 .product(name: "HTTPTypes", package: "swift-http-types"),
@@ -50,7 +50,7 @@ let package = Package(
                 .product(name: "SwiftASN1", package: "swift-asn1"),
                 .product(name: "X509", package: "swift-certificates"),
             ],
-            path: "Sources/AriseMobileSdkWrapper"
+            path: "Sources/AriseMobileWrapper"
         ),
     ]
 )

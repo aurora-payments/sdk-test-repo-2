@@ -4,165 +4,165 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Headers/AriseMobileSDK-Swift.h</key>
+		<key>Headers/AriseMobile-Swift.h</key>
 		<data>
-		JY7LEcwKUrWm24jYhWCeObCEh1c=
+		RGFlrXoDAzfP+6KZSM0lAAdUEiY=
 		</data>
 		<key>Info.plist</key>
 		<data>
 		D5YyOR5HHObkT3vg0cBsPpTRCyM=
 		</data>
-		<key>Modules/AriseMobileSDK.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
+		<key>Modules/AriseMobile.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		A+r1Ub3b6Oj/l9YN7mK5Xx555jo=
+		uWGSV7vDj9lx+gRBaGlxigkvI8s=
 		</data>
-		<key>Modules/AriseMobileSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
+		<key>Modules/AriseMobile.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		2yzokfKTiqh6M2ogv3f5l0hBmYM=
+		RXUIc0rCX6HM314s3qtgPmqthsg=
 		</data>
-		<key>Modules/AriseMobileSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<key>Modules/AriseMobile.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		BqjNHICYr4ShrJVqmOgUNf1UDbM=
+		8NRpzp6tOElGNZzG2hmum6dD+MY=
 		</data>
-		<key>Modules/AriseMobileSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<key>Modules/AriseMobile.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		Ocz4nbwPfjrcHAQWsTZpwVRHdgM=
+		zIRnl5g6kMe7v2EAWw8dCS/qbPg=
 		</data>
-		<key>Modules/AriseMobileSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
+		<key>Modules/AriseMobile.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		oZXPemE5/qT9XqUSvt+UATUVfTs=
+		vG45z3iguSed8sHB/gq1qsavzrQ=
 		</data>
-		<key>Modules/AriseMobileSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
+		<key>Modules/AriseMobile.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		eIP9jrjRI+ZWvaSxHhL8pdNoAw4=
+		XF4KcPLqNd2hs636NCQfND62PxU=
 		</data>
-		<key>Modules/AriseMobileSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
+		<key>Modules/AriseMobile.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		z0j+cge+062V3A4LjwwhXFMwdTA=
+		6I2PO5fi1OJH/ZFfqdB7lx8XaV8=
 		</data>
-		<key>Modules/AriseMobileSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<key>Modules/AriseMobile.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		BqjNHICYr4ShrJVqmOgUNf1UDbM=
+		8NRpzp6tOElGNZzG2hmum6dD+MY=
 		</data>
-		<key>Modules/AriseMobileSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<key>Modules/AriseMobile.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		aOeSlP6hdnYbDH//2Hdm7XMEvcs=
+		+9xILrvmfu3ehEIAElNJcE2HSag=
 		</data>
-		<key>Modules/AriseMobileSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<key>Modules/AriseMobile.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		Ki/aqig8/BOO7jwZHorxjGjO1pw=
+		XUxQ+yORdq6/lCR92360wI216zc=
 		</data>
-		<key>Modules/AriseMobileSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
+		<key>Modules/AriseMobile.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		ZXU5zy4ojGG9BSWI2B/Ej4Njeug=
+		pk4xHGmZh+JaFcOFgfXzzl0TcFU=
 		</data>
-		<key>Modules/AriseMobileSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<key>Modules/AriseMobile.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		m5biwTZ64TX9DfGFewL/6uQ9qHs=
+		WNaCH0HA+pRd0tB8V6XHVqPGV/k=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		0TUKykSAFx3hEQ8LKlN8o9yDwwg=
+		glpdUwnM9eOesRjiUQWQsfbSspA=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Headers/AriseMobileSDK-Swift.h</key>
+		<key>Headers/AriseMobile-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SuqCnIyp1mumqT/3Hc6dyWX9V2W42eBtRFSGAJQT0eQ=
+			jksW5lVLwD3wL2FKh93rqdCWAQuwBEnaEqQjY98Q0h0=
 			</data>
 		</dict>
-		<key>Modules/AriseMobileSDK.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
+		<key>Modules/AriseMobile.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YQM3UmWiSr7jJ7gUdFINAUiUd2FfiUVEQJYB6L06oP8=
+			2q6Ro1G1TyKdOPDnHyTpVu7ZRUo6kMYtTFJ0RbFxkUU=
 			</data>
 		</dict>
-		<key>Modules/AriseMobileSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
+		<key>Modules/AriseMobile.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zGj8ofEfLcrXVcJ5B5qc5Hgl8gf8/UzmL21/pfJcj2Q=
+			kt1VmVlNQOuwDay0uiS+EYyItyEOcB+xVp2g8lZ5MIo=
 			</data>
 		</dict>
-		<key>Modules/AriseMobileSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<key>Modules/AriseMobile.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tXsXtirJy5VrR1fHcfR+QaXKZaMDPLl2QBunogZNnSw=
+			e1imerQaIeigh2t2FdKB7VVC7yc7Hhq+XGSqMpDT5sw=
 			</data>
 		</dict>
-		<key>Modules/AriseMobileSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<key>Modules/AriseMobile.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+f6o00QVX0+PvNFwIyg38FPzKKrBoIDvD2it4XsRzas=
+			jZ8UBTzFhLPQPQgFm+uEsr60/IB5cCCSk1wtOnxjeaA=
 			</data>
 		</dict>
-		<key>Modules/AriseMobileSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
+		<key>Modules/AriseMobile.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sUbyU9J6ekPi5MIJjLhkQGxknhDTQvMtHpnLUUcWS28=
+			rvSLMcMtaBcyAH3rMgXj7a1M1te4aZwGrOBAeiLheVs=
 			</data>
 		</dict>
-		<key>Modules/AriseMobileSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
+		<key>Modules/AriseMobile.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ccg9oJNM2MGGatSzYQYgV0HYAiX0P81GrNc/kH4hXsI=
+			K7oLmsiHPLw3mulQ8jJZWX9e36kyZMvmjZADf3rNEPU=
 			</data>
 		</dict>
-		<key>Modules/AriseMobileSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
+		<key>Modules/AriseMobile.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			n4Ex0Z11eXKUIQUNdNPRKjNDwmHB9rjUFMp/NbQcyYk=
+			6UGlgbUKDjNb8zOz/ic71TNOvYWws9cHYqou9tZR8dA=
 			</data>
 		</dict>
-		<key>Modules/AriseMobileSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<key>Modules/AriseMobile.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tXsXtirJy5VrR1fHcfR+QaXKZaMDPLl2QBunogZNnSw=
+			e1imerQaIeigh2t2FdKB7VVC7yc7Hhq+XGSqMpDT5sw=
 			</data>
 		</dict>
-		<key>Modules/AriseMobileSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<key>Modules/AriseMobile.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KK+iw7siUEO0bzOwH4ZFRZDPAJgb25KuESm2JilxXts=
+			405x2pgiwx7peKvyvU5CGuTJQRf3ON0NOKlq3HKHghk=
 			</data>
 		</dict>
-		<key>Modules/AriseMobileSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<key>Modules/AriseMobile.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JGYi4zM/2W4g6pbA7Im8O6zjuGRLMiwowtxQ9kiOGdo=
+			SkwmYWPMqeVdRWyF1jD9M5iZyMUoJUP9QZGz0NES9Jg=
 			</data>
 		</dict>
-		<key>Modules/AriseMobileSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
+		<key>Modules/AriseMobile.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4jMoJj/NoHJaPTFZDRZuF7NMmWJFbNhLP4nUGv+qohw=
+			sIO4c6esilefz/WcuAb4LWfwTpe84pf0IYehkbjS+Rc=
 			</data>
 		</dict>
-		<key>Modules/AriseMobileSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<key>Modules/AriseMobile.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2mGaTeZmwtdoNJE17qCf0whNOwPM2B0xpbn1mVkfq5U=
+			JlbnspGbuClrpiMjrwXVUDQFgpMs0wk4OlWDZ2fCQhs=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kDv/CKq2VDYJu1d85FHANSuTm99+GapHW1ScnRCddAo=
+			x0Q8btB4uI+ZevdHX7WJc6WFKLeLWQ4EMiAhf6Na6QM=
 			</data>
 		</dict>
 	</dict>
