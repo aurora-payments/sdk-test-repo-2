@@ -27,8 +27,8 @@ let package = Package(
     targets: [
         // Binary target name MUST match the module name inside the framework
         // The framework's module is "AriseMobile" (from PRODUCT_MODULE_NAME)
-        // Framework file is named "AriseMobileSdk.xcframework" but module inside is "AriseMobile"
-        // This avoids naming conflict with the AriseMobileSdk class inside the module
+        // In CI/CD, XCFRAMEWORK_NAME="AriseMobile", so the xcframework is named "AriseMobile.xcframework"
+        // with "AriseMobile.framework" inside. The binary target name must match the module name.
         .binaryTarget(
             name: "AriseMobile",
             path: "./libs/AriseMobile.xcframework"
