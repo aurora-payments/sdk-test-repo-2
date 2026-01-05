@@ -5,9 +5,8 @@
 import Foundation
 
 // In SPM, binary target name MUST match the module name inside the framework
-// IMPORTANT: After rebuilding the framework with PRODUCT_MODULE_NAME = AriseMobileSDK,
-// change the import below to "AriseMobileSDK" (with capital SDK)
-// Currently the framework module is "AriseMobileSdk" (old build, before PRODUCT_MODULE_NAME was set)
+// The framework's module is "AriseMobileSDK" (from PRODUCT_MODULE_NAME)
+// Module name "AriseMobileSDK" differs from class name "AriseMobileSdk" to avoid conflicts
 // We import using the target name, which matches the module name
 @_exported import AriseMobileSDK
 
