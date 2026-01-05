@@ -26,7 +26,7 @@ let package = Package(
     ],
     targets: [
         // Binary target name MUST match the module name inside the framework
-        // The framework's module is "AriseMobileSDK" (from PRODUCT_MODULE_NAME setting)
+        // The framework's module is "AriseMobileSDK" (from PRODUCT_MODULE_NAME)
         .binaryTarget(
             name: "AriseMobileSDK",
             path: "./libs/AriseMobileSdk.xcframework"
