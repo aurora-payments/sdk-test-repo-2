@@ -7,6 +7,7 @@ import Foundation
 // In SPM, binary target name MUST match the module name inside the framework
 // The framework's module is "AriseMobile" (from PRODUCT_MODULE_NAME)
 // Framework file is named "AriseMobileSdk.xcframework" but module inside is "AriseMobile"
+// This avoids naming conflict with the AriseMobileSdk class inside the module
 // We import using the target name, which matches the module name
 // Note: @_exported import may not work with binary targets, so types must be accessed via module prefix
 // Example: AriseMobile.AriseMobileSdk, AriseMobile.LogLevel, AriseMobile.Environment

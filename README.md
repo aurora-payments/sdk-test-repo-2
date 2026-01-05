@@ -28,10 +28,10 @@ Or add it via Xcode:
 ## Usage
 
 ```swift
-import AriseMobileSdk
+import AriseMobileSdkIos
 
 // Initialize the SDK
-let sdk = AriseMobileSdk()
+let sdk = try AriseMobileSdk(environment: .uat)
 ```
 
 ## License
