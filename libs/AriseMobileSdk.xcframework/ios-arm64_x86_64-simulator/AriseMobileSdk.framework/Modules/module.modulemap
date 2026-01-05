@@ -1,4 +1,4 @@
-framework module AriseMobileSdk {
-  header "AriseMobileSdk-Swift.h"
+framework module AriseMobileSDK {
+  header "AriseMobileSDK-Swift.h"
   requires objc
 }
