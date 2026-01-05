@@ -4,13 +4,13 @@
 import PackageDescription
 
 let package = Package(
-    name: "AriseMobileSDK",
+    name: "AriseMobileSdkIos",
     platforms: [
         .iOS(.v15)
     ],
     products: [
         .library(
-            name: "AriseMobileSDK",
+            name: "AriseMobileSdkIos",
             targets: ["AriseMobileSdkWrapper"]
         ),
     ],
@@ -27,7 +27,7 @@ let package = Package(
     targets: [
         // Binary target name MUST match the module name inside the framework
         // The framework's module is "AriseMobileSDK" (from PRODUCT_MODULE_NAME)
-        // Module name "AriseMobileSDK" differs from class name "AriseMobileSDK" to avoid conflicts
+        // Module name "AriseMobileSDK" differs from class name "AriseMobileSdk" to avoid conflicts
         .binaryTarget(
             name: "AriseMobileSDK",
             path: "./libs/AriseMobileSdk.xcframework"
