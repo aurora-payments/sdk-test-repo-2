@@ -9,7 +9,7 @@ import Foundation
 // change the import below to "AriseMobileSDK" (with capital SDK)
 // Currently the framework module is "AriseMobileSdk" (old build, before PRODUCT_MODULE_NAME was set)
 // We import using the target name, which matches the module name
-@_exported import AriseMobileSdk
+@_exported import AriseMobileSDK
 
 // Import CloudCommerce using module name (target name matches module name)
 @_exported import CloudCommerce
