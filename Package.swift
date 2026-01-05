@@ -11,7 +11,7 @@ let package = Package(
     products: [
         .library(
             name: "AriseMobileSdkIos",
-            targets: ["AriseMobileWrapper"]
+            targets: ["AriseMobileSdkIos"]
         ),
     ],
     dependencies: [
@@ -38,7 +38,7 @@ let package = Package(
             path: "./libs/CloudCommerce.xcframework"
         ),
         .target(
-            name: "AriseMobileWrapper",
+            name: "AriseMobileSdkIos",
             dependencies: [
                 "AriseMobile",     // Binary target with module name "AriseMobile"
                 "CloudCommerce",   // Binary target with module name "CloudCommerce"
@@ -51,7 +51,7 @@ let package = Package(
                 .product(name: "SwiftASN1", package: "swift-asn1"),
                 .product(name: "X509", package: "swift-certificates"),
             ],
-            path: "Sources/AriseMobileWrapper"
+            path: "Sources/AriseMobileSdkIos"
         ),
     ]
 )
