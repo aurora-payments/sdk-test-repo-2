@@ -23,13 +23,10 @@ import Foundation
 @_exported import SwiftASN1
 @_exported import X509
 
-// Explicitly re-export public types to make them available without module prefix
-// This is needed because module name (AriseMobileSDK) differs from class name (AriseMobileSdk)
-// and @_exported import may not work correctly with nested module names
-public typealias AriseMobileSdk = AriseMobileSDK.AriseMobileSdk
-public typealias LogLevel = AriseMobileSDK.LogLevel  
-public typealias Environment = AriseMobileSDK.Environment
+// @_exported import should automatically export all public types from AriseMobileSDK
+// Types should be available directly: AriseMobileSdk, LogLevel, Environment
+// Note: If @_exported import doesn't work, types may need to be accessed via module prefix:
+// AriseMobileSDK.AriseMobileSdk, AriseMobileSDK.LogLevel, AriseMobileSDK.Environment
 
 // Note: Both AriseMobileSdk and CloudCommerce require external dependencies.
 // These dependencies are linked dynamically at runtime to avoid duplicate class definitions.
-
