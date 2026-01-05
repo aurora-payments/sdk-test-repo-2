@@ -26,9 +26,11 @@ let package = Package(
     ],
     targets: [
         // Binary target name MUST match the module name inside the framework
-        // The framework's module is "AriseMobileSDK" (from PRODUCT_MODULE_NAME)
+        // NOTE: After rebuilding the framework with PRODUCT_MODULE_NAME = AriseMobileSDK,
+        // change this to "AriseMobileSDK" (with capital SDK)
+        // Currently the framework module is "AriseMobileSdk" (matches PRODUCT_NAME)
         .binaryTarget(
-            name: "AriseMobileSDK",
+            name: "AriseMobileSdk",
             path: "./libs/AriseMobileSdk.xcframework"
         ),
         .binaryTarget(
@@ -38,7 +40,7 @@ let package = Package(
         .target(
             name: "AriseMobileSdkWrapper",
             dependencies: [
-                "AriseMobileSDK",  // Binary target with module name "AriseMobileSDK"
+                "AriseMobileSdk",  // Binary target with module name "AriseMobileSdk"
                 "CloudCommerce",   // Binary target with module name "CloudCommerce"
                 // AriseMobileSdk requires these dependencies
                 .product(name: "OpenAPIRuntime", package: "swift-openapi-runtime"),
