@@ -7,15 +7,15 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>AriseMobileSdk</string>
+	<string>AriseMobile</string>
 	<key>CFBundleExecutable</key>
 	<string>AriseMobile</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.arise.AriseMobileSdk</string>
+	<string>com.arise.AriseMobile</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>AriseMobileSdk</string>
+	<string>AriseMobile</string>
 	<key>CFBundlePackageType</key>
 	<string>FMWK</string>
 	<key>CFBundleShortVersionString</key>

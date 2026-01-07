@@ -11327,10 +11327,10 @@ public enum TTPError : Swift.Error, Foundation.LocalizedError {
   }
   #endif
 }
-public class AriseMobileSdk {
+@_hasMissingDesignatedInitializers public class AriseMobileSdk {
   final public let ttp: AriseMobile.AriseMobileTTP
   #if compiler(>=5.3) && $NonescapableTypes
-  public init(environment: AriseMobile.Environment, countryCode: Swift.String? = "USA") throws
+  convenience public init(environment: AriseMobile.Environment, countryCode: Swift.String? = "USA") throws
   #endif
   public func setLogLevel(_ level: AriseMobile.LogLevel)
   public func getLogLevel() -> AriseMobile.LogLevel
@@ -11608,6 +11608,7 @@ public struct AmountDto {
   public var taxAmount: Swift.Double
   public var taxRate: Swift.Double
   public var totalAmount: Swift.Double
+  public init(baseAmount: Swift.Double, percentageOffAmount: Swift.Double, percentageOffRate: Swift.Double, cashDiscountAmount: Swift.Double, cashDiscountRate: Swift.Double, surchargeAmount: Swift.Double, surchargeRate: Swift.Double, tipAmount: Swift.Double, tipRate: Swift.Double, taxAmount: Swift.Double, taxRate: Swift.Double, totalAmount: Swift.Double)
 }
 public struct AuthorizationRequest {
   public let paymentProcessorId: Swift.String
