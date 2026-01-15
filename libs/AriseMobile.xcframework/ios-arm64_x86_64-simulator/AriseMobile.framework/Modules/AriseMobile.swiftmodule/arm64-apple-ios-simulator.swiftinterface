@@ -36,9 +36,6 @@ public struct DevicesResponse : Swift.Sendable {
   public let devices: [AriseMobile.DeviceInfo]
   public init(devices: [AriseMobile.DeviceInfo])
 }
-public struct TTPEventMapper {
-  public static func toTTPEvent(_ event: CloudCommerce.EventStream) -> AriseMobile.TTPEvent
-}
 public enum LogLevel : Swift.Int, Swift.CaseIterable {
   case none
   case error
@@ -76,12 +73,9 @@ public enum LogLevel : Swift.Int, Swift.CaseIterable {
   public func checkCompatibility() -> AriseMobile.TTPCompatibilityResult
   public func getStatus() async throws -> AriseMobile.TTPStatus
   public func prepare() async throws
-  public func resume() async throws
   @available(iOS 18.0, *)
   @_Concurrency.MainActor public func showEducationalInfo(from viewController: UIKit.UIViewController) async throws
   public func activate() async throws
-  @available(*, deprecated, message: "Use performTransaction(amount:) or performTransaction(calculationResult:isDebitCard:) instead")
-  @_Concurrency.MainActor public func performTransaction(request: AriseMobile.TTPTransactionRequest) async throws -> AriseMobile.TTPTransactionResult
   @_Concurrency.MainActor public func performTransaction(amount: Foundation.Decimal) async throws -> AriseMobile.TTPTransactionResult
   @_Concurrency.MainActor public func performTransaction(calculationResult: AriseMobile.CalculateAmountResponse, isDebitCard: Swift.Bool) async throws -> AriseMobile.TTPTransactionResult
   @_Concurrency.MainActor public func abortTransaction() async throws -> Swift.Bool
@@ -11327,6 +11321,31 @@ public enum TTPError : Swift.Error, Foundation.LocalizedError {
   }
   #endif
 }
+public enum CreateMethodId : Swift.Int, Swift.CaseIterable {
+  case portal
+  case apiToken
+  case terminal
+  case invoice
+  case quickPayment
+  case webComponent
+  case subscription
+  case mobileApp
+  case tapToPay
+  public var displayName: Swift.String {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias AllCases = [AriseMobile.CreateMethodId]
+  public typealias RawValue = Swift.Int
+  nonisolated public static var allCases: [AriseMobile.CreateMethodId] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 @_hasMissingDesignatedInitializers public class AriseMobileSdk {
   final public let ttp: AriseMobile.AriseMobileTTP
   #if compiler(>=5.3) && $NonescapableTypes
@@ -11344,17 +11363,17 @@ public enum TTPError : Swift.Error, Foundation.LocalizedError {
   public func clearStoredToken()
   public func refreshAccessToken() async throws -> AriseMobile.AuthenticationResult
   #if compiler(>=5.3) && $NonescapableTypes
-  public func getTransactions(filters: AriseMobile.TransactionFilters? = nil) async throws -> AriseMobile.TransactionsResponse?
+  public func getTransactions(filters: AriseMobile.TransactionFilters? = nil) async throws -> AriseMobile.TransactionsResponse
   #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  public func getTransactionDetails(id: Swift.String) async throws -> AriseMobile.TransactionDetails?
-  #endif
+  public func getTransactionDetails(id: Swift.String) async throws -> AriseMobile.TransactionDetails
   public func submitAuthTransaction(input: AriseMobile.AuthorizationRequest) async throws -> AriseMobile.AuthorizationResponse
   public func submitSaleTransaction(input: AriseMobile.AuthorizationRequest) async throws -> AriseMobile.AuthorizationResponse
   public func calculateAmount(request: AriseMobile.CalculateAmountRequest) async throws -> AriseMobile.CalculateAmountResponse
   public func voidTransaction(transactionId: Swift.String) async throws -> AriseMobile.TransactionResponse
   public func captureTransaction(transactionId: Swift.String, amount: Swift.Double) async throws -> AriseMobile.TransactionResponse
-  public func refundTransaction(request: AriseMobile.RefundRequest) async throws -> AriseMobile.TransactionResponse
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func refundTransaction(transactionId: Swift.String, amount: Swift.Double? = nil) async throws -> AriseMobile.TransactionResponse
+  #endif
   public func getPaymentSettings() async throws -> AriseMobile.PaymentSettingsResponse
   public func getDevices() async throws -> AriseMobile.DevicesResponse
   public func getDeviceInfo(deviceId: Swift.String) async throws -> AriseMobile.DeviceInfo
@@ -11643,20 +11662,6 @@ public struct AuthorizationRequest {
   public let l3: AriseMobile.L3Data?
   #if compiler(>=5.3) && $NonescapableTypes
   public init(paymentProcessorId: Swift.String, amount: Swift.Double, currencyId: Swift.Int32, cardDataSource: AriseMobile.CardDataSource, paymentMethodId: Swift.String? = nil, accountNumber: Swift.String? = nil, securityCode: Swift.String? = nil, expirationMonth: Swift.Int32? = nil, expirationYear: Swift.Int32? = nil, track1: Swift.String? = nil, track2: Swift.String? = nil, emvTags: [Swift.String]? = nil, emvPaymentAppVersion: Swift.String? = nil, customerId: Swift.String? = nil, tipAmount: Swift.Double? = nil, tipRate: Swift.Double? = nil, percentageOffRate: Swift.Double? = nil, surchargeRate: Swift.Double? = nil, useCardPrice: Swift.Bool? = nil, billingAddress: AriseMobile.AddressDto? = nil, shippingAddress: AriseMobile.AddressDto? = nil, contactInfo: AriseMobile.ContactInfoDto? = nil, pin: Swift.String? = nil, pinKsn: Swift.String? = nil, emvFallbackCondition: AriseMobile.EMVFallbackCondition? = nil, emvFallbackLastChipRead: AriseMobile.EMVFallbackLastChipRead? = nil, referenceId: Swift.String? = nil, customerInitiatedTransaction: Swift.Bool? = nil, l2: AriseMobile.L2Data? = nil, l3: AriseMobile.L3Data? = nil) throws
-  #endif
-}
-public struct RefundRequest {
-  public let transactionId: Swift.String
-  public let amount: Swift.Double?
-  public let cardDataSource: AriseMobile.CardDataSource
-  public let track1: Swift.String?
-  public let track2: Swift.String?
-  public let emvTags: [Swift.String]?
-  public let emvPaymentAppVersion: Swift.String?
-  public let pin: Swift.String?
-  public let pinKsn: Swift.String?
-  #if compiler(>=5.3) && $NonescapableTypes
-  public init(transactionId: Swift.String, amount: Swift.Double? = nil, cardDataSource: AriseMobile.CardDataSource, track1: Swift.String? = nil, track2: Swift.String? = nil, emvTags: [Swift.String]? = nil, emvPaymentAppVersion: Swift.String? = nil, pin: Swift.String? = nil, pinKsn: Swift.String? = nil)
   #endif
 }
 public struct SourceResponseDto {
@@ -12049,12 +12054,12 @@ public struct TransactionFilters {
   public let pageSize: Swift.Int?
   public let asc: Swift.Bool?
   public let orderBy: Swift.String?
-  public let createMethodId: Swift.Int?
+  public let createMethodId: AriseMobile.CreateMethodId?
   public let createdById: Swift.String?
   public let batchId: Swift.String?
   public let noBatch: Swift.Bool?
   #if compiler(>=5.3) && $NonescapableTypes
-  public init(page: Swift.Int? = nil, pageSize: Swift.Int? = nil, asc: Swift.Bool? = nil, orderBy: Swift.String? = nil, createMethodId: Swift.Int? = nil, createdById: Swift.String? = nil, batchId: Swift.String? = nil, noBatch: Swift.Bool? = nil) throws
+  public init(page: Swift.Int? = nil, pageSize: Swift.Int? = nil, asc: Swift.Bool? = nil, orderBy: Swift.String? = nil, createMethodId: AriseMobile.CreateMethodId? = nil, createdById: Swift.String? = nil, batchId: Swift.String? = nil, noBatch: Swift.Bool? = nil) throws
   #endif
 }
 public struct TransactionOperation {
@@ -12577,6 +12582,9 @@ extension AriseMobile.Components.Schemas.MerchantApiTokenDto.CodingKeys : Swift.
 extension AriseMobile.Components.Schemas.SendIsvTransactionReceiptBySmsRequest.CodingKeys : Swift.Equatable {}
 extension AriseMobile.Components.Schemas.SendIsvTransactionReceiptBySmsRequest.CodingKeys : Swift.Hashable {}
 extension AriseMobile.Components.Schemas.SendIsvTransactionReceiptBySmsRequest.CodingKeys : Swift.RawRepresentable {}
+extension AriseMobile.CreateMethodId : Swift.Equatable {}
+extension AriseMobile.CreateMethodId : Swift.Hashable {}
+extension AriseMobile.CreateMethodId : Swift.RawRepresentable {}
 extension AriseMobile.Environment : Swift.Equatable {}
 extension AriseMobile.Environment : Swift.Hashable {}
 extension AriseMobile.TTPTransactionStatus : Swift.Equatable {}
