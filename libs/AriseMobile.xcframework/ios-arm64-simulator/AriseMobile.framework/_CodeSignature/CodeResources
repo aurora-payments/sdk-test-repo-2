@@ -10,55 +10,55 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		qjWwk6KGv4fFKObbWAXu4YAjOtk=
+		5+8yoj24UKFxOWcHf94TZC7Xip4=
 		</data>
 		<key>Modules/AriseMobile.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		kh1RO4F8eunILJiz37s9xiO/dCI=
+		B9kSmtHMSPDGpF58DfFT7Aut7bo=
 		</data>
 		<key>Modules/AriseMobile.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		0/29jVsGNkkmZYezM65c825XOdE=
+		8hB941f40tknSiFlGkHFNHCUN/I=
 		</data>
 		<key>Modules/AriseMobile.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		jDAFOOLhr1uQWFXrW49XEP6zsg8=
+		EgDSV+l4YK8SlSEC1cpeWPFjBto=
 		</data>
 		<key>Modules/AriseMobile.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		pvg3ZQK1ZzCi2o1yFP/ayWdW7pM=
+		OcINwGfaoHN3KsOGIF3UiAFYpy0=
 		</data>
 		<key>Modules/AriseMobile.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		KLgw9dJJZRKiGgA2Te8yfhA+XCI=
+		jlWvPNmi3f1XJ/F4jLK8qMzNThk=
 		</data>
 		<key>Modules/AriseMobile.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		bDJQGk3XG4no0+vzCNcBGmIiqSo=
+		5GWj6Zz5mTVgTzOMie30gYp9CJU=
 		</data>
 		<key>Modules/AriseMobile.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		iDbZy2mHDlXIk+1/4Qjm5Me3rNA=
+		xOC7ry6hPfecyGI7ZfO6TsRm6Mg=
 		</data>
 		<key>Modules/AriseMobile.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		jDAFOOLhr1uQWFXrW49XEP6zsg8=
+		EgDSV+l4YK8SlSEC1cpeWPFjBto=
 		</data>
 		<key>Modules/AriseMobile.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		uJwktOzJld5DmJjiBEWm0itD6XU=
+		K/csKOReHVmmBW70xUeIq2DqP/U=
 		</data>
 		<key>Modules/AriseMobile.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		fQPhW+rXiy14GhY3+SuX5l/eMlU=
+		pQH/vgfFeW2dj6Ujl+Ctyo1/4WA=
 		</data>
 		<key>Modules/AriseMobile.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		EfwziSPYcIxBQtDSynsv9mU6npo=
+		EZ3w7UyqPttdh/fKpkBJN8kJ6Fw=
 		</data>
 		<key>Modules/AriseMobile.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		dOAFjG2B/OrzriR2jc88wTqwXVM=
+		UaiW5uwb51tQaDKIJKz7Xsuo+Eo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -78,84 +78,84 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			L0H0loOcaLCP5SVUR3C7qaAhqmlt0oESCeGOm8J6Iiw=
+			h3DBt1FMGyKBn9TI4aG+GN6zz47C8X8bePRayJ9lIiA=
 			</data>
 		</dict>
 		<key>Modules/AriseMobile.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1T4gc3tGrBm7vT1SXVg4j1DQwVHhIyDfMw+j8LtBk2U=
+			F0/0B/+s62zLr8l/q43S8AVs3yCy5x9nteQ9j2/mDf8=
 			</data>
 		</dict>
 		<key>Modules/AriseMobile.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qo8sPQMxUaehfAOfU7AiZzjuPT+UbTv7hp/EDtoroRo=
+			DneTU4+jw8zE9PZrYiwdGHcgwsf6g0xcyl4ORW8OBNI=
 			</data>
 		</dict>
 		<key>Modules/AriseMobile.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			96jC689sbeDTlPYHFMDe2vStnQE+a+cHasqrpJ8ltOY=
+			VaLsG+0BCqKtMzoEw1q/yGxmf5sUglZU5cJLDJEgJs4=
 			</data>
 		</dict>
 		<key>Modules/AriseMobile.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DYKtZmsaMtb76eLHl3sKJ4ifXupOms9x2Uw7NUyTAcc=
+			wHGM7EWapbPmLN9KnkohaOECzp0EqCEC6Ws6GGgvTME=
 			</data>
 		</dict>
 		<key>Modules/AriseMobile.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Hx7cC0r0xPQDkrpSL4bhrKE8lscBilEhCh+r8cWi8II=
+			Q0GsPss1lB+hT6Pje/uUCYSTcA98Y5S54tTBQyCBEO0=
 			</data>
 		</dict>
 		<key>Modules/AriseMobile.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vRKdOZ7KO7Ma4wbi3ldnAw4QANHsVp5v5OmOHGoul7o=
+			94OlFlRggkTYePrca8M8q6K+OOulnoC0xEdy4LJtinc=
 			</data>
 		</dict>
 		<key>Modules/AriseMobile.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qo8sPQMxUaehfAOfU7AiZzjuPT+UbTv7hp/EDtoroRo=
+			DneTU4+jw8zE9PZrYiwdGHcgwsf6g0xcyl4ORW8OBNI=
 			</data>
 		</dict>
 		<key>Modules/AriseMobile.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IQt1AXdIWb1fRetAb+27zpDohl3SGs8PilLDkphLEGQ=
+			BI1yBk1aHdLTdcMqVI2j4wMe35aQ7bEIzATeKTFMUAs=
 			</data>
 		</dict>
 		<key>Modules/AriseMobile.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GX1cUQHfREroxyzmpri1CNZWuYXv18uYGlkkvPKbdjw=
+			b2ZGqAewMSni0ATqbhzfLwWVTbOXKfFH04b5xUYOtO0=
 			</data>
 		</dict>
 		<key>Modules/AriseMobile.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			p8fG+WpXAxZP7lwGpORZt1HuRc7E0w/ZLGbHVbqZBUk=
+			2b751pDrF4xuitKA73vCbOMGlpwKg+xa+2zOkkPLEg4=
 			</data>
 		</dict>
 		<key>Modules/AriseMobile.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hfXYTqVn7EUUx7wZ8LEI1LHjZmeVmzjtXULR1sf5uc4=
+			k9iok3suE7FcQgoT+piVd/8UhHI3BcM4L7nQa1WFnMc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
