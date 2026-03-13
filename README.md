@@ -1,6 +1,6 @@
 # AriseMobileSdk Android
 
-Latest pre-release: v0.0.1-pre-release-3
+Latest pre-release: v0.0.1-pre-release-4
 
 ## Installation
 
